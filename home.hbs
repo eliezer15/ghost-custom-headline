@@ -5,11 +5,15 @@
         <div class="custom-intro-outer">
             <section class="custom-intro">
                 <div class="custom-intro-content gh-content gh-canvas">
-                    {{#get "pages" filter="slug:home-intro" limit=1}}
-                        {{#foreach pages}}
-                            {{content}}
-                        {{/foreach}}
-                    {{/get}} 
+                    <h1>{{@custom.intro_header}}</h1>
+                    <p>
+                        {{@custom.intro_text}}
+                    </p>
+                    {{#if @custom.intro_subscribe_text}}
+                        <div class="kg-card kg-button-card kg-align-center">
+                            <a href="#/portal/signup/free" class="kg-btn kg-btn-accent">{{@custom.intro_subscribe_text}}</a></div>
+                        <h2 id=""><br><br></h2>
+                    {{/if}}
                 </div>
                 <div class="custom-intro-image">
                     <img src="{{@custom.intro_image}}" alt="{{@site.title}}">

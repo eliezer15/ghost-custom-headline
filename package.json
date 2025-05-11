@@ -83,6 +83,18 @@
             "intro_image": {
                 "type": "image",
                 "group": "homepage"
+            },
+            "intro_header": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "intro_text": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "intro_subscribe_text": {
+                "type": "text",
+                "group": "homepage"
             }
         }
     },
