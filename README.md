@@ -1,37 +1,23 @@
-# Headline
+# Custom Ghost Theme
 
-Headline is a [Ghost](https://github.com/TryGhost/Ghost) theme built from the ground up for local news. While it can be used for any purpose, the theme takes a thoughtful approach to displaying large amounts of content across various areas of coverage. Headline adapts to your content by showcasing your most written about topics or by giving you the control to decide which topics are front and center.
-
-**Demo: https://headline.ghost.io**
-
-# Instructions
-
-1. [Download this theme](https://github.com/TryGhost/Headline/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+Based on the Ghost Headline theme.
 
 # Development
 
-Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+## Local Commands
 
-```bash
-# Install
-yarn
+- `gulp build` to build the site (apply css and js changes)
+- `gulp zip` to zip the site for upload to ghost
 
-# Run build & watch for changes
-yarn dev
-```
+## Local Development
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+- Create a new Ghost site with `ghost install local`
+- Run `ghost start` to start ghost
+- Go to ghost admin and choose `headline` as the theme
+- Inside the `/contents/themes` folder delete the existing `headline` folder
+- Create a symbolic link inside `themes` named `headline` and pointing to this repo locally
+- Now all local changes will be visible in the ghost site. Remember that for changes to css you need to rebuild.
 
-The `zip` Gulp task packages the theme files into `dist/headline.zip`, which you can then upload to your site.
-
-```bash
-yarn zip
-```
-
-# Contribution
-
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
 
 ## Copyright & License
 
