@@ -79,6 +79,19 @@
             "enter_tag_slugs_for_secondary_sections": {
                 "type": "text",
                 "group": "homepage"
+            },
+            "intro_heading": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "intro_paragraphs": {
+                "type": "text",
+                "group": "homepage",
+                "default": "I help entrepreneurs and business leaders **calm their chaos and reduce burnout** through intentional time management.\n\nI believe that productivity is about being intentional about how you spend your time, energy, and attention in all parts of your life.\n\nSubscribe to my free bi-weekly newsletter, **Every Intention**, and get free articles on productivity and living with intention sent to your inbox.\n\nYou can also hire me for **[one-on-one productivity consulting](/consulting/)** or **[book me to speak](speaking/)** on productivity, intention, and resilience."
+            },
+            "intro_image": {
+                "type": "image",
+                "group": "homepage"
             }
         }
     },

@@ -9,7 +9,7 @@
 
         <div class="gh-topic gh-topic-grid">
             <div class="gh-topic-content gh-feed">
-                {{#match pagination.page 2}}
+                {{#match pagination.page 1}}
                     {{#get "posts" include="authors" limit=@config.posts_per_page as |recent|}}
                         {{#foreach recent}}
                             {{> "loop-grid"}}
