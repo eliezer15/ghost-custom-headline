@@ -4,14 +4,15 @@
     <div class="gh-inner">
         <div class="custom-intro-outer">
             <section class="custom-intro">
+                <div class="custom-intro-content gh-content gh-canvas">
+                    {{#get "pages" filter="slug:home-intro" limit=1}}
+                        {{#foreach pages}}
+                            {{content}}
+                        {{/foreach}}
+                    {{/get}} 
+                </div>
                 <div class="custom-intro-image">
                     <img src="{{@custom.intro_image}}" alt="{{@site.title}}">
-                </div>
-
-                <div class="custom-intro-content gh-content gh-canvas">
-                    <h2>{{@custom.intro_heading}}</h2>
-                    <p>{{@custom.intro_paragraphs}}</p>
-                        
                 </div>
             </section>
         </div>
