@@ -19,11 +19,15 @@
         grid-template-columns: 1fr;
     }
 
+    .custom-intro-image {
+        order: -1;
+    }
+
     .custom-intro-image img{ margin: 0 auto; }
 }
 
 @media (min-width: 992px) {
-    .is-head-left-logo .gh-head-menu {
+    .gh-head-menu {
         margin-left: 0;
         margin-right: 0;
     }
